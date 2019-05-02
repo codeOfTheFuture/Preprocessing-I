@@ -133,60 +133,97 @@ table {
 html,
 body {
   height: 100%;
-}
-.columns {
-  display: flex;
-  justify-content: center;
+  font-size: 62.5%;
 }
 .nav-links {
   padding: 3.5em;
   text-decoration: none;
   color: black;
+  font-size: 1.6rem;
 }
-.section-one {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.secondary-heading {
-  font-size: 2em;
-  margin: 1em 0;
+.btn {
+  padding: 1em 2em;
+  background: black;
+  color: lightgrey;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
 }
 .container {
-  font-family: Geneva, Tahoma, Verdana, sans-serif;
-  font-size: 1.2em;
+  font-family: Tahoma, Verdana, sans-serif;
+  font-family: 1.6rem;
   line-height: 1.5em;
   width: 70%;
   margin: auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .container .header {
+    height: 300px;
+  }
+}
 .container .header nav ul {
-  margin: 50px 0;
   display: flex;
   justify-content: center;
+  margin: 50px 0;
 }
-.container .header nav ul a {
+@media (max-width: 500px) {
+  .container .header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .container .header nav ul li {
+    padding: 25px 0;
+  }
+}
+.container .header nav ul li a {
   padding: 3.5em;
   text-decoration: none;
   color: black;
+  font-size: 1.6rem;
 }
 .container .top-section {
   background: lightgrey;
+  padding: 5em;
+}
+@media (max-width: 500px) {
+  .container .top-section {
+    text-align: center;
+  }
 }
 .container .top-section img {
   border-radius: 50%;
-  width: 20%;
-  margin: 2em 4em;
+  width: 30%;
+  margin: 2em 0;
+}
+@media (max-width: 500px) {
+  .container .top-section img {
+    width: 50%;
+    text-align: center;
+  }
 }
 .container .top-section h1 {
-  font-size: 4em;
-  margin: 0.5em 1em;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0.5em 0;
+  letter-spacing: 0.4em;
+}
+@media (max-width: 500px) {
+  .container .top-section h1 {
+    font-size: 2rem;
+  }
 }
 .container .top-section p {
-  margin: 1em 3.3em;
-  font-size: 1.2em;
+  margin: 2em 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.2em;
 }
 .container .top-section button {
-  margin: 1.5em 5.5em;
   padding: 1em 2em;
   background: black;
   color: lightgrey;
@@ -195,50 +232,85 @@ body {
 }
 .container .middle-section {
   display: flex;
-  justify-content: space-around;
-  font-size: 1.2em;
+  justify-content: center;
+  font-size: 1.6rem;
   line-height: 1.5em;
+  margin-top: 2em;
 }
-.container .middle-section div {
+@media (max-width: 500px) {
+  .container .middle-section {
+    flex-direction: column;
+  }
+}
+.container .middle-section .about {
+  width: 60%;
+  border: 1px solid black;
+  padding: 2em;
+}
+@media (max-width: 500px) {
+  .container .middle-section .about {
+    width: 100%;
+  }
+}
+.container .middle-section .skills {
   width: 40%;
-  margin: 2em 0;
+  border: 1px solid black;
+  padding: 2em 4em;
 }
-.container .middle-section div h2 {
-  font-size: 2em;
+@media (max-width: 500px) {
+  .container .middle-section .skills {
+    width: 100%;
+  }
+}
+.container .middle-section h2 {
+  font-size: 2rem;
   margin: 1em 0;
 }
-.container .middle-section div ul {
+.container .middle-section ul {
   margin: 0 2em;
 }
-.container table,
-.container th,
-.container td {
-  border: 1px solid black;
-}
-.container table th,
-.container th th,
-.container td th,
-.container table td,
-.container th td,
-.container td td {
-  padding: 1em 2.5em;
+.container .bottom-section {
+  margin: 2em 0;
   text-align: center;
 }
-.container table th,
-.container th th,
-.container td th {
+.container .bottom-section table,
+.container .bottom-section th,
+.container .bottom-section td {
+  border: 1px solid black;
+  width: 100%;
+  padding: 2em 6em;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .container .bottom-section table,
+  .container .bottom-section th,
+  .container .bottom-section td {
+    padding: 2em;
+  }
+}
+.container .bottom-section table th,
+.container .bottom-section th th,
+.container .bottom-section td th {
   font-weight: bold;
 }
 .container .contact {
+  font-size: 2rem;
   margin: 4em 0;
-  text-align: center;
+  line-height: 1.5em;
 }
 .container .contact h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+.container .contact strong {
   font-weight: bold;
 }
 .container footer {
+  width: 100%;
   background: black;
   color: lightgrey;
+  font-size: 1.6rem;
+  padding: 1em 0;
   text-align: center;
-  margin: 2em 0;
 }
