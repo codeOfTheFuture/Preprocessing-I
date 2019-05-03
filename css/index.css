@@ -1,1 +1,316 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+.nav-links {
+  padding: 3.5em;
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+}
+.btn {
+  padding: 1em 2em;
+  background: black;
+  color: lightgrey;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+.container {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-family: 1.6rem;
+  line-height: 1.5em;
+  width: 70%;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .container .header {
+    height: 300px;
+  }
+}
+.container .header nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+@media (max-width: 500px) {
+  .container .header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .container .header nav ul li {
+    padding: 25px 0;
+  }
+}
+.container .header nav ul li a {
+  padding: 3.5em;
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+}
+.container .top-section {
+  background: lightgrey;
+  padding: 5em;
+}
+@media (max-width: 500px) {
+  .container .top-section {
+    text-align: center;
+  }
+}
+.container .top-section img {
+  border-radius: 50%;
+  width: 30%;
+  margin: 2em 0;
+}
+@media (max-width: 500px) {
+  .container .top-section img {
+    width: 50%;
+    text-align: center;
+  }
+}
+.container .top-section h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0.5em 0;
+  letter-spacing: 0.4em;
+}
+@media (max-width: 500px) {
+  .container .top-section h1 {
+    font-size: 2rem;
+  }
+}
+.container .top-section p {
+  margin: 2em 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.2em;
+}
+.container .top-section button {
+  padding: 1em 2em;
+  background: black;
+  color: lightgrey;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+.container .middle-section {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  margin-top: 2em;
+}
+@media (max-width: 500px) {
+  .container .middle-section {
+    flex-direction: column;
+  }
+}
+.container .middle-section .about {
+  width: 60%;
+  border: 1px solid black;
+  padding: 2em;
+}
+@media (max-width: 500px) {
+  .container .middle-section .about {
+    width: 100%;
+  }
+}
+.container .middle-section .skills {
+  width: 40%;
+  border: 1px solid black;
+  padding: 2em 4em;
+}
+@media (max-width: 500px) {
+  .container .middle-section .skills {
+    width: 100%;
+  }
+}
+.container .middle-section h2 {
+  font-size: 2rem;
+  margin: 1em 0;
+}
+.container .middle-section ul {
+  margin: 0 2em;
+}
+.container .bottom-section {
+  margin: 2em 0;
+  text-align: center;
+}
+.container .bottom-section table,
+.container .bottom-section th,
+.container .bottom-section td {
+  border: 1px solid black;
+  width: 100%;
+  padding: 2em 6em;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .container .bottom-section table,
+  .container .bottom-section th,
+  .container .bottom-section td {
+    padding: 2em;
+  }
+}
+.container .bottom-section table th,
+.container .bottom-section th th,
+.container .bottom-section td th {
+  font-weight: bold;
+}
+.container .contact {
+  font-size: 2rem;
+  margin: 4em 0;
+  line-height: 1.5em;
+}
+.container .contact h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+.container .contact strong {
+  font-weight: bold;
+}
+.container footer {
+  width: 100%;
+  background: black;
+  color: lightgrey;
+  font-size: 1.6rem;
+  padding: 1em 0;
+  text-align: center;
+}
